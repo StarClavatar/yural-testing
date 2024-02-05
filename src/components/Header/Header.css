@@ -1,0 +1,183 @@
+.header {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-block__logo {
+  width: 150px;
+}
+
+.header-block__text {
+  max-width: 167px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 420px) {
+  .header-block__text {
+    display: none;
+  }
+}
+
+.header-block {
+  display: flex;
+  align-items: center;
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 906px) {
+  .call {
+    display: none;
+  }
+}
+
+.call__number {
+  font-size: 28px;
+  line-height: 33px;
+  color: #fff;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1003px) {
+  .call {
+    display: none;
+  }
+}
+
+.call__number:hover {
+  color: #035aa4;
+}
+
+.call__number::before {
+  content: url("../../assets/lens.svg");
+  width: 20px;
+  height: 20px;
+  padding-right: 6px;
+}
+
+.call__subtitle {
+  font-size: 11px;
+  line-height: 13px;
+  opacity: 0.8;
+  text-align: end;
+  color: white;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+.header__burger {
+  display: none;
+  background-image: url("../../assets/menu.svg");
+  background-position: center;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.header__burger:hover {
+  opacity: 0.5;
+  background-color: grey;
+}
+
+@media screen and (max-width: 751px) {
+  .header-links {
+    display: none;
+  }
+  .header-login {
+    display: none !important;
+  }
+  .header__burger {
+    display: initial;
+  }
+}
+
+.header-links__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-links__wrapper:first-child {
+  border-right: 1px solid #7d7d7d;
+  padding-right: 20px;
+}
+
+.header-links__link {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-align: end;
+  transition: 0.2s;
+}
+
+.header-links__link:hover {
+  color: #035aa4;
+}
+
+.header-params {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-params__option {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border: none;
+  width: fit-content;
+  outline: none;
+  transition: 0.2s;
+}
+
+.header-params__option:hover {
+  color: #035aa4;
+}
+
+.header-login {
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 11px 24px;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+  transition: 0.2s;
+}
+
+.header-login:hover {
+  background-color: #035aa4;
+}
+
+.header-login::before {
+  content: url("../../assets/login.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  transform: translateY(2px);
+}
+
+.header-login__button {
+  border: none;
+  background-color: blue;
+  height: 70%;
+  display: flex;
+  width: 100%;
+}

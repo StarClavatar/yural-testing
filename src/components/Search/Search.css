@@ -1,0 +1,123 @@
+.search {
+  margin: 32px auto 20px;
+  border-radius: 8px;
+  max-width: 814px;
+  width: 100%;
+}
+
+@media screen and (max-width: 660px) {
+    .search {
+        margin-top: 10px;
+    }
+  }
+
+.search-wrapper {
+  width: 100%;
+}
+
+.divider {
+  max-width: 814px;
+  margin: 0 auto;
+  box-sizing: initial;
+}
+
+.search__heading {
+  margin: 0 0 45px;
+  max-width: 452px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+  color: white;
+}
+
+@media screen and (max-width: 848px) {
+  .search__heading {
+    font-size: 30px;
+    line-height: initial;
+    margin-bottom: 24px 0 !important;
+  }
+}
+
+@media screen and (max-width: 660px) {
+    .search__heading {
+      font-size: 30px;
+      line-height: initial;
+      margin-bottom: 24px 0 12px;
+      text-align: center;
+    }
+  }
+
+.search-input {
+  display: flex;
+  max-width: 814px;
+}
+
+.search-input__input {
+  padding: 20px 24px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-input__send-button {
+  padding: 0 20px 0 30px;
+  border: none;
+  text-transform: uppercase;
+  background: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  border-radius: 0 8px 8px 0;
+}
+
+.search-input__send-button::before {
+  content: url("../../assets/search.svg");
+  left: 5px;
+  top: 21px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.search-input__send-button:hover {
+  color: #035aa4;
+}
+
+.search-results {
+  margin: 0;
+  width: fit-content;
+  transform: translateY(5px);
+  background-color: #fff;
+  border-radius: 4px;
+  height: 45px;
+}
+
+.search-results::before {
+  content: "Результаты поиска";
+  padding: 2px 7px;
+  font-size: 32px;
+  line-height: 40px;
+  background: linear-gradient(to right, #11cf76 32%, #035aa4 79%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-results_analogues::before {
+    content: 'Аналоги';
+}
+
+@media screen and (max-width: 660px) {
+  .search-results {
+    width: 100%;
+    text-align: center;
+  }
+  .search-results::before {
+    font-size: 24px;
+  }
+}
+

@@ -1,0 +1,33 @@
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.block-1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 6, 10, 0.555) 34%,
+      rgba(29, 51, 77, 0.8) 100%
+    ),
+    url("./assets/bg.jpeg");
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  padding-bottom: 6px;
+}
+
+.container {
+  max-width: 1182px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    padding: 0 8px;
+  }
+}
