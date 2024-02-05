@@ -30,9 +30,9 @@ const Search = () => {
     <div className="container">
       <form
         className="search"
-        // onSubmit={(e) => {
-        //   e.preventDefault();
-        // }}
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
       >
         <h2 className="search__heading">ВАШ ФАВОРИТ <br/> В ВЫБОРЕ АВТОЗАПЧАСТЕЙ</h2>
         <div className="search-input">
